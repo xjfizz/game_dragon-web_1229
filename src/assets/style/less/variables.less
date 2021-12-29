@@ -1,0 +1,152 @@
+//自定义图标名el-icon-my-
+.el-icon-my-loading {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../icon/my-loading3.png");
+  width: 230px;
+  height: 108px;
+}
+
+//content中是中文的Unicode编码； font-size:图标大小； visibility: hidden;来隐藏文字
+.el-icon-my-loading:before {
+  content: "\8d3a";
+  font-size: 14px;
+  visibility: hidden;
+}
+
+.el-loading-mask {
+  background: linear-gradient(180deg, #473222 0%, #221d1d 100%);
+  // opacity: 0.55;
+}
+
+.noData-wrap {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  margin-top: 180px;
+
+  .no-dragon {
+    img {
+      width: 248px;
+      height: 248px;
+    }
+  }
+
+  .no-data-title {
+    margin-top: 8px;
+    font-size: 24px;
+    font-family: GothamRounded-Medium, GothamRounded;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 29px;
+    opacity: 0.48;
+  }
+
+  .no-data-des {
+    margin-top: 8px;
+    width: 299px;
+    height: 48px;
+    font-size: 16px;
+    font-family: GothamRounded-Book, GothamRounded;
+    font-weight: normal;
+    color: #ffffff;
+    line-height: 24px;
+    opacity: 0.48;
+    text-align: center;
+  }
+}
+
+.zZindex {
+  z-index: 999999999999 !important;
+}
+
+:root ::-webkit-scrollbar {
+  //width: 5px;
+  width: 0px;
+  /* height: 100px; */
+}
+
+:root ::-webkit-scrollbar-thumb {
+  background-color: #3c1103;
+  border-radius: 3px;
+}
+
+.select-hover:hover {
+  opacity: 0.55;
+  cursor: pointer;
+}
+
+.select-no-hover {
+  opacity: 1;
+}
+
+.select-bc-hover:hover {
+  cursor: pointer;
+
+  img {
+    opacity: 0.55;
+
+  }
+}
+
+.select-dragon-hover:hover {
+  background: #1a1716;
+}
+
+.text-opacity {
+  opacity: 0.68;
+}
+
+.hover-select:hover {
+  opacity: 0.68;
+  cursor: pointer;
+}
+
+.no-data {
+  opacity: 0.48;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  // background-color: rgba(20, 19, 19, 0.86);
+  background-color: rgba(20, 19, 19, 0.86);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999999;
+}
+
+
+// 动画
+/*创建*/
+@keyframes myScale {
+  from {
+    transform: scale(0);
+  }
+
+  // 10%{transform: scale(0.1)}
+  // 20%{transform: scale(0.2)}
+  // 30%{transform: scale(0.3)}
+  // 40%{transform: scale(0.4)}
+  // 50%{transform: scale(0.5)}
+  // 60%{transform: scale(0.6)}
+  // 70%{transform: scale(0.7)}
+  // 80%{transform: scale(0.8)}
+  // 90%{transform: scale(0.9)}
+  to {
+    transform: scale(1);
+  }
+}
+
+.scale-enter-active {
+  animation: myScale 0.5s;
+}
+
+.scale-leave-active {
+  // animation: myScale 2s reverse;
+}
